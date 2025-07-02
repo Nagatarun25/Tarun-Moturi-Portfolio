@@ -1,0 +1,28 @@
+{
+  "name": "tarun-portfolio",
+  "version": "1.0.0",
+  "description": "Engineering portfolio for Naga Tarun Moturi",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.23.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "react-type-animation": "^3.2.0",
+    "typewriter-effect": "^2.22.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^4.3.9"
+  }
+}
