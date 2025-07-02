@@ -1,11 +1,14 @@
 {
+  "homepage": "https://Nagatarun25.github.io/Tarun-Moturi-Portfolio",
   "name": "tarun-portfolio",
   "version": "1.0.0",
   "description": "Engineering portfolio for Naga Tarun Moturi",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
