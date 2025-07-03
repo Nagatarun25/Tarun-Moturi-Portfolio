@@ -1,5 +1,5 @@
 // Navbar.jsx
-const links = ["home", "projects", "skills","resume", "contact"];
+const links = ["home", "work-experience", "projects", "skills","resume", "contact"];
 
 export default function Navbar() {
   return (

@@ -27,25 +27,27 @@ const experiences = [
 export default function WorkExperience() {
   return (
     <section
-      id="experience"
-      style={{
-        maxWidth: "1000px",
-        margin: "3rem auto",
-        padding: "0 1rem",
-        fontFamily: "'Inter', sans-serif",
-      }}
-    >
-      <h2
-        style={{
-          fontSize: "2.75rem",
-          fontWeight: "bold",
-          color: "#2563eb",
-          borderBottom: "4px solid #60a5fa",
-          display: "inline-block",
-          marginBottom: "2rem",
-          userSelect: "none",
-        }}
-      >
+  id="work-experience"
+  style={{
+    maxWidth: "1100px",
+    margin: "4rem auto",
+    top:"50px",
+    padding: "2rem",
+    paddingTop: "80px",      // extra top padding to create space
+    marginTop: "-64px",      // negative margin to pull up visually
+    fontFamily: "'Inter', sans-serif",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "2.5rem",
+      fontWeight: "bold",
+      color: "#2563eb",
+      borderBottom: "4px solid #60a5fa",
+      display: "inline-block",
+      marginBottom: "2.5rem",
+    }}
+  >
         Work Experience
       </h2>
 
@@ -58,6 +60,16 @@ export default function WorkExperience() {
           paddingBottom: "1rem",
           scrollbarWidth: "thin",
           scrollbarColor: "#60a5fa #e0e7ff",
+
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+          paddingTop: "1rem",
+
+          // Prevent shrinking
+          flexWrap: "nowrap",
+
+          // Make sure overflow clipping doesn’t affect zoom
+          overflowY: "visible",
         }}
         className="work-experience-scroll"
       >
@@ -65,34 +77,28 @@ export default function WorkExperience() {
           <div
             key={idx}
             style={{
-              flex: "0 0 320px",
-              backgroundColor: "#f9fbff",
-              borderRadius: "20px",
-              padding: "2rem 1.5rem 2.5rem",
-              boxShadow:
-                "0 10px 20px rgba(37, 99, 235, 0.15), 0 6px 6px rgba(37, 99, 235, 0.1)",
-              scrollSnapAlign: "center",
+              flex: "0 0 auto",               // Prevent shrinking
+              scrollSnapAlign: "start",
+              width: "380px",                 // Or whatever width you want
+              maxWidth: "90vw",
+              boxSizing: "border-box",
+              borderRadius: "12px",
+              padding: "1.5rem",
+              backgroundColor: "#f0f4f8",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
+              boxShadow: "0 4px 12px rgba(37, 99, 235, 0.1)",
+              overflow: "visible",
               cursor: "default",
-              userSelect: "none",
-              perspective: "600px",
             }}
             className="experience-card"
-            onMouseMove={(e) => {
-              const card = e.currentTarget;
-              const rect = card.getBoundingClientRect();
-              const x = e.clientX - rect.left - rect.width / 2;
-              const y = e.clientY - rect.top - rect.height / 2;
-              card.style.transform = `rotateY(${x * 0.05}deg) rotateX(${
-                -y * 0.05
-              }deg) scale(1.03)`;
-              card.style.boxShadow = "0 20px 40px rgba(37, 99, 235, 0.3)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "none";
-              e.currentTarget.style.boxShadow =
-                "0 10px 20px rgba(37, 99, 235, 0.15), 0 6px 6px rgba(37, 99, 235, 0.1)";
-            }}
+            onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.03)";
+            e.currentTarget.style.boxShadow = "0 8px 25px rgba(37, 99, 235, 0.3)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.boxShadow = "0 4px 12px rgba(37, 99, 235, 0.1)";
+          }}
           >
             <div
               style={{
