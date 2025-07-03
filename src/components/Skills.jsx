@@ -1,8 +1,8 @@
-// Skills.jsx
+
 export default function Skills() {
   const skills = [
-    "C++", "Embedded Systems", "IoT Development", "React.js",
-    "Tailwind CSS", "Git & GitHub", "Linux", "FreeRTOS", "Python"
+    "Python", "Java", "JavaScript", "HTML/CSS", "React.js", "C++", "C#", "TypeScript", "SQL", "NoSQL", "CMake", "MATLAB",
+    "NumPy", "Arduino", "Node.js", "Embedded Firmware (STM32, AVR)", "Git", "GitHub", "CAD", "Electronics", "Linux", "Bash", "Simulink", "ESP32", "Raspberry Pi 3"
   ];
   return (
     <section id="skills">

@@ -6,7 +6,7 @@ export default function Projects() {
         "I developed an AI-powered automotive dashboard using React and TypeScript to showcase the future of connected vehicle software. The project featured real-time predictive maintenance algorithms powered by machine learning, which helped reduce potential vehicle downtime by up to 40%. I also integrated a voice-controlled assistant using speech recognition and natural language processing to enable fully hands-free control for improved usability and safety. Alongside this, I built an intelligent navigation system that optimized traffic routes and fuel efficiency, demonstrating strong problem-solving skills within the automotive space.",
       tech: ["React.js", "TypeScript", "Machine Learning", "Natural Language Processing", "Speech Recognition APIs", "Git"],
       img: "ai.png",
-      link: "https://github.com/Nagatarun25/iot-device",
+      link: "https://github.com/Nagatarun25/AI-Car-Assistant",
     },
     {
       title: "Battery Monitor Project",
@@ -15,6 +15,14 @@ export default function Projects() {
       tech: ["C++", "Simulink", "STM32", "Google Test", "Matplotlib", "FSM", "Git"],
       img: "battery.png",
       link: "https://github.com/macformula/racecar/pull/380",
+    },
+    {
+      title: "Arduino Sumobot",
+      description:
+        "I engineered an autonomous robot that combined mechanical design with intelligent control systems. I designed the chassis using SOLIDWORKS, optimized for stability and agility in the ring. The bot was powered wirelessly via a Bluetooth HC-05 module and operated fully autonomously, with no manual control. It used IR sensors for edge detection and ultrasonic sensors for opponent tracking, enabling the robot to dynamically navigate, avoid falling out of the ring, and seek out opponents. I programmed the control logic using Arduino, focusing on sensor fusion, decision-making, and responsive behavior. This project deepened my skills in embedded systems, autonomous robotics, and hardware-software integration.",
+      tech: ["Arduino", "Sensor Integration", "Autonomous Logic Design", "CAD", "Control Systems", "FSM"],
+      img: "sumobot.png",
+      link: "https://github.com/Nagatarun25/McMaster-Sumobot-Competition",
     },
     // Add more projects here
   ];
