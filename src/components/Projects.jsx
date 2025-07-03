@@ -9,12 +9,12 @@ export default function Projects() {
       link: "https://github.com/Nagatarun25/iot-device",
     },
     {
-      title: "Battery Management System",
+      title: "Battery Monitor Project",
       description:
-        "CAN-based BMS with live cell monitoring and error detection. This text is longer to show how the card grows dynamically with content.",
-      tech: ["C++", "CAN", "STM32"],
-      img: "/projects/bms.jpg",
-      link: "https://github.com/Nagatarun25/bms",
+        "I engineered a modular C++ battery monitoring system modeled after a converted Simulink design for a Formula 1 racecar. The software managed state transitions through complex logic involving precharge sequencing, contactor control, and fault-handling overrides. I created unit tests using the Google Test framework to verify system behavior across 20+ scenarios, including transitions from initialization to startup, relay failures, low state-of-charge, and thermal faults. These tests helped ensure each subsystem responded safely and predictably under edge conditions, and I further validated performance by visualizing command vs. feedback signals over time using Matplotlib.",
+      tech: ["C++", "Simulink", "STM32", "Google Test", "Matplotlib", "FSM", "Git"],
+      img: "battery.png",
+      link: "https://github.com/macformula/racecar/pull/380",
     },
     // Add more projects here
   ];

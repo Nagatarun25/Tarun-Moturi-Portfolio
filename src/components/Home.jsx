@@ -35,12 +35,11 @@ export default function Home() {
       <div className="max-w-md text-center sm:text-left flex-shrink-0">
         <Typewriter text="Naga Tarun Moturi" speed={120} />
         <p className="text-xl font-semibold text-blue-600 mb-3">
-          Automation Engineering Student
+          Automation Systems Engineering Student
         </p>
         <p className="text-gray-700 mb-6 max-w-sm">
-          McMaster University • Second Year
           <br />
-          Embedded Systems | IoT | Software Engineering
+          I’m a second year Automation Engineering Technology student at McMaster University, passionate about embedded systems, software engineering, and testing hardware-software solutions. I enjoy working on projects that combine both hardware and software and solving problems to make systems run smoothly. Through my studies and experience, I’ve developed skills in programming microcontrollers and debugging. Outside of school, I enjoy dancing and playing sports, which help me stay balanced and energized. I’m eager to keep learning and take on new engineering challenges that help me grow.
         </p>
         <div className="flex space-x-8 justify-center sm:justify-start text-blue-600 text-3xl">
           <a
