@@ -1,11 +1,11 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Embedded IoT Device",
+      title: "AI-Powered Automotive Dashboard",
       description:
-        "Low-power sensor hub with real-time monitoring and cloud sync. Add as much descriptive text here as you want — the card height will grow automatically to fit it.",
-      tech: ["C++", "STM32", "FreeRTOS"],
-      img: "/projects/iot.jpg",
+        "I developed an AI-powered automotive dashboard using React and TypeScript to showcase the future of connected vehicle software. The project featured real-time predictive maintenance algorithms powered by machine learning, which helped reduce potential vehicle downtime by up to 40%. I also integrated a voice-controlled assistant using speech recognition and natural language processing to enable fully hands-free control for improved usability and safety. Alongside this, I built an intelligent navigation system that optimized traffic routes and fuel efficiency, demonstrating strong problem-solving skills within the automotive space.",
+      tech: ["React.js", "TypeScript", "Machine Learning", "Natural Language Processing", "Speech Recognition APIs", "Git"],
+      img: "ai.png",
       link: "https://github.com/Nagatarun25/iot-device",
     },
     {
