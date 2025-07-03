@@ -43,7 +43,7 @@ export default function Resume() {
 
       {/* Download button */}
       <a
-        href="/resume.pdf"
+        href="Naga_Tarun_Moturi_Resume.pdf"
         download="Naga_Tarun_Moturi_Resume.pdf"
         style={{
           display: "inline-block",
