@@ -7,7 +7,7 @@ const experiences = [
     companyLogo:
       "f1.jpg",
     location: "Hamilton, ON",
-    date: "Jan 2024 – Present",
+    date: "Sept 2024 – Present",
     details: [
       "I am currently working with the Mac Formula Electric team as an Embedded Firmware Developer, where I’m building real-time embedded systems using C++, MATLAB, and STM32 microcontrollers to optimize motor control and improve vehicle efficiency. A major part of my role involves converting Simulink-based battery management system models into embedded code that integrates smoothly with our vehicle’s low-level firmware. I collaborate with the battery integration team to design and test safety-critical features that enhance system reliability and ensure compliance with engineering standards. I also developed a modular interrupt hook system to enable responsive, event-driven behavior across the firmware, which plays a key role in improving the reliability and safety of our electric vehicle systems.",
     ],
