@@ -268,32 +268,7 @@ h2 {
   font-size: 0.875rem;
 }
 
-/* Skills Section */
-#skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
 
-#skills li {
-  background: #60a5fa;
-  color: white;
-  padding: 0.75rem 1.25rem;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
-  transition: transform 0.3s ease;
-}
-
-#skills li:hover {
-  transform: scale(1.1);
-}
 
 /* Contact Section */
 #contact form {
@@ -492,3 +467,177 @@ h2 {
     }
   }
   
+ 
+
+/* -------------------------
+   Header: match your Projects header
+   - short underline under the word
+   - thin line across the section (but NOT through text)
+   ------------------------- */
+
+/* If you already have these globally for Projects, this will match it.
+   If not, it will create the same look. */
+.sectionHeader {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto 2.25rem;
+  padding-top: 0.5rem;
+}
+
+.sectionTitle {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 0.35rem 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1e63ff;               /* match your blue */
+  background: transparent;
+  z-index: 2;
+}
+
+
+
+/* -------------------------
+   Layout
+   ------------------------- */
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills-row {
+  display: grid;
+  grid-template-columns: minmax(240px, 280px) 1fr;
+  gap: 1.25rem;
+  padding: 1.7rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.skills-row:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* -------------------------
+   Label box with CLEAR icon
+   ------------------------- */
+
+.skills-labelBox {
+  position: relative;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+  padding: 1.05rem 1.1rem;
+  min-height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden; /* keep icon contained */
+}
+
+.skills-labelText {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.78);
+  line-height: 1.15;
+  max-width: 70%;
+}
+
+/* Icon: visible, not faint, not cropped */
+.skills-labelIcon {
+  font-size: 2.35rem;
+  color: rgba(95, 160, 255, 0.55);   /* stronger than before */
+  transform: translateY(2px);
+}
+
+/* -------------------------
+   Pills
+   ------------------------- */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.skill-pill {
+  padding: 0.58rem 0.98rem;
+  border-radius: 999px;
+  background: #5fa0ff;
+  color: #fff;
+  font-weight: 650;
+  font-size: 0.95rem;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(95, 160, 255, 0.22);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  user-select: none;
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(95, 160, 255, 0.28);
+  background: #4f95ff;
+}
+
+/* -------------------------
+   Responsive
+   ------------------------- */
+@media (max-width: 920px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.35rem 0;
+  }
+
+  .skills-labelBox {
+    min-height: 70px;
+  }
+
+  .skills-labelText {
+    max-width: 78%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Skills Section` */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#skills li {
+  background: #60a5fa;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
+  transition: transform 0.3s ease;
+}
+
+#skills li:hover {
+  transform: scale(1.1);
+}

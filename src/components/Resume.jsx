@@ -35,7 +35,7 @@ export default function Resume() {
         }}
       >
         <img
-          src="Naga_Tarun_Moturi_Resume-1.png"
+          src="NagaTarunMoturi.jpg"
           alt="Resume Preview"
           style={{ width: "100%", height: "auto", display: "block" }}
         />
@@ -43,8 +43,8 @@ export default function Resume() {
 
       {/* Download button */}
       <a
-        href="Naga_Tarun_Moturi_Resume.pdf"
-        download="Naga_Tarun_Moturi_Resume.pdf"
+        href="NagaTarunMoturi.pdf"
+        download="NagaTarunMoturi.pdf"
         style={{
           display: "inline-block",
           backgroundColor: "#2563eb",
